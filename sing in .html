@@ -1,0 +1,45 @@
+<html>
+    <head>
+<link rel="stylesheet" href="../assesst/css/sing in.css">
+    </head>
+    <body>
+        <div class="logo-space"></div>
+        <div class="authForm">
+          <div class="formLists">
+                <div class="member-list-singin">
+                      <div class="form-title">
+                            <h1>Log In</h1>
+                      </div>
+                      <form id="loginForm" class="sidebar-login" ng-submit="onLoginSubmit()">
+                <input type="text" ng-model="loginUsername" name="username" value=""
+                placeholder="Username">
+                            
+                <input type="text" ng-model="loginPassword" name="password" value=""
+                placeholder="Password">
+                            </input>
+                    <div class="forgotpass"><span>Forgot password?</span></div>
+                            <button class="singIn-button" type="submit" name="signin">Sing In</button>
+                       </form>
+              </div>
+                <div class="member-list-newAccount">
+                    <div class="form-title">
+                          <h1>New Account</h1>
+                    </div>
+                    <form id="registerForm" class="newAccount" layout="column" ng-submit="onSubmit()">
+              <input placeholder="Full name" name="fullName" ng-model="full_name" value="" type="text">
+              </input>
+              <input placeholder="Email" name="email" ng-model="email" value="" type="text">
+                                  </input>
+                                  <div class="inputContainer">
+                 <input class="userName-input" placeholder="Username" name="username" ng-model="username" value="" type="text">
+                                         </input>
+                 <input class="password-input" placeholder="Password" name="password" ng-model="password" value="" type="password">
+                                         </input>
+                                  </div>
+              <button class="sing_up" type="submit" name="signup">Sign Up</button>
+                                    </form>
+              </div>
+          </div>
+        </div>
+    </body>
+</html>
